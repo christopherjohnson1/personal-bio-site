@@ -1,3 +1,15 @@
 body {
     background-color: teal;
+    font-family: 'Playfair Display', serif;
+}
+
+.bio {
+    text-align: justify;
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 20pt;
+    text-indent: 20px;
+}
+
+.nav {
+    display: flex;
 }
