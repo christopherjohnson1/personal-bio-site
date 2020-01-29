@@ -3,13 +3,10 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-.bio {
+/* .bio {
     text-align: justify;
-    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Playfair Display', serif;
     font-size: 20pt;
     text-indent: 20px;
-}
+} */
 
-.nav {
-    display: flex;
-}
