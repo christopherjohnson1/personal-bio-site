@@ -6,22 +6,23 @@ html {
  }
  /*-- Body Font --*/
  body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Tomorrow', sans-serif;
     color: #505962;
  }
  
  /*============= NAVIGATION =============*/
  
  .navbar-brand img {
-    height: 2rem;
+    height: 3rem;
  }
  .navbar {
-    padding: .6rem 1rem;
+    /* padding: .6rem 1rem; */
     font-size: .9rem;
     letter-spacing: .1rem;
     background-color: rgba(57, 63, 70, .9);
     font-weight: 700;
     text-transform: uppercase;
+    width: 100%;
  }
  .navbar-nav li {
     padding-right: .8rem;
@@ -63,23 +64,23 @@ html {
     height: 100%;
  }
  .home-inner {
-    background-image: url('https://via.placeholder.com/3000x2000');
+    background-image: url(./images/aurora.jpg);
     position: fixed;
     display: table;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     background-size: cover;
     background-position: center center;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    will-change: transform;
+    /* transform: translateZ(0); */
+    /* -webkit-transform: translateZ(0); */
+    /* will-change: transform; */
  }
  /*-- Landing Page Content --*/
  .caption {
     z-index: 1;
-    top: 40%;
+    top: 69%;
     position: absolute;
     text-align: center;
  }
@@ -91,6 +92,10 @@ html {
  }
  
  /*============= ABOUT SECTION =============*/
+
+ .about-me {
+
+ }
  
  /*-- Scrollspy Offset --*/
  .offset:before {
@@ -100,21 +105,39 @@ html {
     display: block;
  }
  
- .heading {
-    text-transform: uppercase;
-    font-weight: 700;
+ .bio {
+     text-align: center;
+     font-size: 1.5rem;
  }
- .heading-underline {
-    width: 3rem;
-    height: .25rem;
-    background-color: #00b3ff;
-    margin: 1.5rem auto;
- }
- .about .svg-inline--fa {
-    color: #00b3ff;
+
+ .list-title {
+     font-size: 1.4rem;
+     text-align: start;
  }
  
+ .like-list {
+     list-style: none;
+     text-indent: 10px;
+     font-size: 1.2rem;
+     text-align: start;
+ }
  /*============= PORTFOLIO SECTION =============*/
+.tech-heading {
+    background-color: rgb(57, 63, 70);
+    color: #E3005B;
+}
+
+.tech-title {
+    color: #E3005B;
+}
+
+ .tech-icons {
+     background-color: rgba(57, 63, 70, .9);
+ }
+
+ .svg-inline--fa {
+     color: #E3005B;
+ }
  
  .portfolio-item {
     overflow: hidden;
