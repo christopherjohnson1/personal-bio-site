@@ -1,72 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Bio</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Chris Johnson</title>
+	<link rel="shortcut icon" href="https://via.placeholder.com/48x48">
+	<!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="./main.css">
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Tomorrow:300,400,700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <!-- Navigation -->
-  <!-- <nav class="nav"> -->
-    <!-- TODO: Insert some sort of H1-H6 with your name here -->
-  <nav class="nav navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><h1>Chris Johnson</h1></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a id="navToBio" class="nav-link" href="#">Bio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a id="navToTechnologies" class="nav-link" href="#">Technologies</a>
-        </li>
-        <li class="nav-item">
-          <a id="navToProjects" class="nav-link" href="#">Projects</a>
-        </li>
+<body data-spy="scroll" data-target="#navbarResponsive">
 
-          </div>
-        </li>
-      </ul>
+	<!-- Start Home Section -->
+	<div id="home">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-md fixed-top">
+			<a href="#" class="navbar-brand"><img src="./images/name-icon.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="#home" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#about" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="#technologies" class="nav-link">Technologies</a>
+					</li>
+					<li class="nav-item">
+						<a href="#projects" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Start Landing Page Image-->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+				</div>
+			</div>
+		</div>
+		<!-- End Landing Page Image -->
+
+		<!-- Start Landing Page Content -->
+		<div class="col-12 caption">
+      <h1 class="text-light text-uppercase pb-3 pb-md-4">Chris Johnson</h1>
+      <h2 class="text-white">-Software Developer-</h2>
+		</div>
+		<!-- End Landing Page Content-->
+
+	</div>
+	<!-- End Home Section -->
+
+
+	<!-- Start About Section -->
+	<div id="about" class="offset">
+    <div class="container-fluid pt-5 about-me">
+      <div class="row">
+        <div class="col">
+          <img src="./images/Me.jpg" alt="Me" class="img-fluid">
+        </div>
+        <div class="col-8">
+          <h1 class="text-center py-3">-About Me-</h1>
+          <p class="bio lead">
+            My name is Chris Johnson. Prior to becoming a software developer, I was a combat medic in the Army, 
+            and an abstract artist that is still active with painting.  I really enjoy working in a team environment, 
+            and value communication. My favorite thing about coding is that it allows me to solve unique problems in a creative way.
+          </p>
+          <p class="bio lead">A few things that I find really interesting are: spirals, patterns observed in nature, 
+            meditation, and the wonders of the universe.</p>
+        </div>
+      </div>
     </div>
-  </nav>
-  <!-- End Navigation -->
+	</div>
+	<!-- End About Section -->
 
-  <!-- Primary View -->
-  <div class="fullPage" id="bioPage">
-    <!-- TODO: Fill in bio info here: What is your background? Why do you want to go into development? What do you love about development? -->
-    <p class="bio">I have enjoyed experimenting with various technologies since I was a child.<br> 
-      One of my favorite stories is when I was younger and it was common to have a family PC, I would<br>
-      "borrow" the RAM from my father's computer so my gaming experience would be enhanced. I have wanted to<br>
-      get into coding/ development for some time now, but on a trip to Denver in 2019 one of my friends was<br>
-      able to work remotely and that was so cool to see someone having that freedom. The thing I love about<br> 
-      development is the problem solving, it is so rewarding whenever you solve a problem you were working on.</p>
 
-    </div>
-  <div class="fullPage" id="technologiesPage">
-      <h2>Technologies</h2>
-    <!-- TODO: Start an UL of all of the tools and technologies you've started learning so far. (You'll beef this page up later). -->
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-</div>
-  <div class="fullPage" id="projectsPage"></div>
-  <!-- End Primary View -->
+	<!-- Start Portfolio Section -->
+	<div id="technologies" class="offset">
 
-  <!-- Footer -->
-  <footer class="page-footer">
-      email, LinkedIn, GitHub
-  </footer>
+		<!-- Start Container-Fluid -->
+		<div class="container-fluid text-center py-5 px-0 mx-0">
 
-    <!-- TODO: Fill in contact info here: Include things like email, LinkedIn, Twitter and GitHub links. -->
-  <!-- End Footer -->
-    <script src="./projects.js"></script>
+			<h2 class="heading tech-heading m-0 py-3">-Technologies-</h2>
+			<div class="heading-underline"></div>
+
+			<!-- Start Portfolio Grid -->
+			<div class="row py-4 tech-icons">
+
+				<div class="col-3 p-0">
+					<div class="portfolio-item">
+            <i class="fab fa-html5 fa-10x"></i>
+            <h1 class="tech-title">HTML5</h1>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-3 p-0">
+					<div class="portfolio-item">
+            <i class="fab fa-css3-alt fa-10x"></i>
+            <h1 class="tech-title">CSS3</h1>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-3 p-0">
+					<div class="portfolio-item">
+            <i class="fab fa-js fa-10x"></i>
+            <h1 class="tech-title">JavaScript</h1>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-3 p-0">
+					<div class="portfolio-item">
+            <i class="fab fa-bootstrap fa-10x"></i>
+            <h1 class="tech-title">Bootstrap</h1>
+						</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- End Portfolio Grid -->
+
+		<!-- End Container-Fluid -->
+
+	</div>
+	<!-- End Portfolio Section -->
+
+
+	<!-- Start Testimonials Section -->
+	<div id="projects" class="offset">
+
+		<!-- Start Jumbotron-->
+		<div class="jumbotron text-center pb-5 mb-0">
+
+			<h2 class="heading">Projects</h2>
+			<div class="heading-underline"></div>
+
+			<div class="row justify-content-center">
+
+				<div class="col-11 col-sm-10">
+					<div class="row pt-3">
+
+						<div class="col-md-6 pb-5">
+							<div class="card rounded-0 mx-sm-2 mx-lg-4 mx-xl-5">
+								<img src="https://via.placeholder.com/1280x680" alt="" class="card-img-top rounded-0">
+								<div class="card-body">
+									<h4>John Lee</h4>
+									<h5 class="mt-2 mb-3">CEO, Company Inc.</h5>
+									<p class="lead border-top pt-3">"I have over 10 years of experience in technology and haven't come accross a better service."</p>
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- End Row -->
+				</div> <!-- End Column-->
+
+			</div> <!-- End Row -->
+
+		</div>
+		<!-- End Jumbotron -->
+	</div>
+	<!-- End Testimonials Section -->
+
+
+	<!-- Start Contact Section -->
+	<div id="contact" class="offset">
+		
+		<div class="container-fluid footer">
+			<div class="row text-light pt-4 pb-5 px-2 px-md-5">
+
+				<div class="col-md-5">
+					<img src="https://via.placeholder.com/266x64" alt="" class="my-4">
+					<p>At our core is a collection of design and development solutions that represent everything your business needs to compete in the modern marketplace.</p>
+					<strong>Our Location</strong>
+					<p>100 Street Name<br>Our City, AA 10000</p>
+					<strong>Contact Info</strong>
+					<p>(888) 888-8888<br>me@w3newbie.com</p>
+					<ul class="social pt-3">
+						<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-7">
+					<h3 class="text-uppercase my-4">Contact Us</h3>
+
+					<form action="contact/contact.php" method="POST" id="contact-form">
+					
+						<div class="messages"></div>
+
+						<div class="controls">
+
+							<div class="form-group">
+								<input type="text" name="name" id="form_name" class="form-control" required="required" placeholder="Enter your name.">
+							</div>
+
+							<div class="form-group">
+								<input type="email" name="email" id="form_email" class="form-control" required="required" placeholder="Enter your email.">
+							</div>
+
+							<div class="form-group">
+								<textarea name="message" id="form_message" rows="4" class="form-control" required="required" placeholder="Add your message."></textarea>
+							</div>
+
+							<input type="submit" value="Send Message" class="btn btn-outline-light">
+
+						</div> <!-- End Controls -->
+					
+					</form>
+				</div> <!-- End Column -->
+
+				<hr class="socket w-100">
+				&copy; w3newbie Nest Theme.
+
+			</div> <!-- End Row -->
+		</div> <!-- End Footer Container -->
+	</div>
+	<!-- End Contact Section -->
+
+
+	<!-- Script Source Files -->
+
+	<!-- jQuery https://code.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.10.1/js/all.js -->
+	<script src="https://use.fontawesome.com/releases/v5.10.1/js/all.js"></script>
+	<!-- Plugins.js -->
+	<script src="./projects.js"></script>
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+	<!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	
+	<!-- End of Script Source Files -->
 </body>
 </html>
