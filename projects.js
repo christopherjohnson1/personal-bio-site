@@ -1,38 +1,45 @@
-// const projects = [
-//   {
-//     title: "Cool Project",
-//     screenshot: "http://gotoflashgames.com/files/file/033.jpg",
-//     description: "This is the best project", // A good project description includes 'the what', 'the why', and 'the how'.
-//     technologiesUsed:
-//       "HTML, CSS, Vanilla JavaScript, Version Control with Github",
-//     available: true,
-//     url: "https://github.com/christopherjohnson1/personal-bio-site" // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
-//   },
-//   {},
-//   {}
-// ];
+const projects = [
+  {
+    title: "Pet Adoption",
+    screenshot: "./screenshots/main-view.png",
+    description: "Project to gain familiarization with HTML5, CSS3, JavaScript dynamic page building, and Bootstrap gird/ cards.", // A good project description includes 'the what', 'the why', and 'the how'.
+    technologiesUsed:
+      'HTML5, CSS3, JavaScript, Bootstrap',
+    available: true,
+    url: "https://github.com/christopherjohnson1/personal-bio-site" // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+  },
+  {},
+  {}
+];
 
-// const printToDom = (divId, textToPrint) => {
-//   const selectedDiv = document.getElementById(divId);
-//   selectedDiv.innerHTML = textToPrint;
-// };
+const printToDom = (divId, textToPrint) => {
+  const selectedDiv = document.getElementById(divId);
+  selectedDiv.innerHTML = textToPrint;
+};
 
-// const createProjectCards = () => {
-//   let domString = "";
-//   for (let i = 0; i < projects.length; i++)
-//     if (projects[i].available === true) {
-//         domString += '<div>';
-//         domString += `<h1>${projects[i].title}</h1>`;
-//         domString += `<img src=${projects[i].screenshot} alt="screenshot">`;
-//         domString += `<p>${projects[i].description}</p>`;
-//         domString += `<p>${projects[i].technologiesUsed}</p>`
-//         domString += `<p>${projects[i].url}</p>`
-//         domString += '</div>';
-//     }
-//     printToDom('projectsPage', domString);
-// };
+const createProjectCards = () => {
+  let domString = "";
+  for (let i = 0; i < projects.length; i++)
+    if (projects[i].available === true) {
+        domString += '<div class="col-11 col-sm-10">'
+        domString += '<div class="row pt-3">'
+        domString +=   '<div class="col-md-6 pb-5">'
+        domString +=   '<div class="card rounded-0 mx-sm-2 mx-lg-4 mx-xl-5">'
+        domString += `<img src="${projects[i].screenshot}" alt="" class="card-img-top rounded-0">`
+        domString += '<div class="card-body">'
+        domString += `<h4>${projects[i].title}</h4>`
+        domString += `<h5 class="mt-2 mb-3 tech-used"><p class="not-red">Technologies used:</p> ${projects[i].technologiesUsed}</h5>`
+        domString += `<p class="lead border-top pt-3">${projects[i].description}</p>`
+        domString += '</div>'
+        domString += '</div>'
+        domString += '</div>'
+        domString += '</div>'
+        domString += '</div>'
+    }
+    printToDom('projects', domString);
+};
 
-// createProjectCards();
+createProjectCards();
 
 
 /*========== CLOSE MOBILE NAV ON CLICK ==========*/
