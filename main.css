@@ -133,6 +133,7 @@ html {
 
  .tech-icons {
      background-color: rgba(57, 63, 70, .9);
+     width: 101%;
  }
 
  .svg-inline--fa {
@@ -154,12 +155,17 @@ html {
  }
  
  /*============= TESTIMONIALS SECTION =============*/
- 
+ .tech-used {
+    font-size: 1rem;
+ }
  .card h5 {
-    color: #00b3ff;
+    color: #E3005B;
  }
  .card p, .footer p {
     font-size: 1.1rem;
+ }
+ .not-red {
+    color: black;
  }
  
  /*============= CONTACT SECTION =============*/
@@ -174,7 +180,7 @@ html {
     color: white;
  }
  .footer .svg-inline--fa {
-    font-size: 1.6rem;
+    font-size: 2rem;
  }
  .footer .svg-inline--fa:hover {
     color: #00b3ff;
