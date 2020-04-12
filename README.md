@@ -4,7 +4,7 @@
 This project is an exploration in combining some of the skills that we have learned in the course.
 
 ## Screenshots
-![Main Screen](./screenshots/landing.png)
+![Main Screen](./src/screenshots/landing.png)
 
 ## How to run
 1. Clone down this repo
