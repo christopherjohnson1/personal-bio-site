@@ -15,15 +15,16 @@ const projects = [
   {},
 ];
 
+
 const createProjectCards = () => {
   let domString = '';
-  for (let i = 0; i < projects.length; i + 1) {
+  for (let i = 0; i < projects.length; i++) {
     if (projects[i].available === true) {
       domString += '<div class="col-11 col-sm-10">';
       domString += '<div class="row pt-3">';
       domString += '<div class="col-md-6 pb-5">';
       domString += '<div class="card rounded-0 mx-sm-2 mx-lg-4 mx-xl-5">';
-      domString += `<img src="${projects[i].screenshot}" alt="" class="card-img-top rounded-0">`;
+      domString += `<img src='${projects[i].screenshot}' alt="" class="card-img-top rounded-0">`;
       domString += '<div class="card-body">';
       domString += `<h4>${projects[i].title}</h4>`;
       domString += `<h5 class="mt-2 mb-3 tech-used"><p class="not-red">Technologies used:</p> ${projects[i].technologiesUsed}</h5>`;
