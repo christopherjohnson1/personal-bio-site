@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 /*============= RESETS =============*/
 
 /*-- iPhone X Remove Gutters --*/
@@ -61,7 +64,7 @@ html {
     height: 100%;
  }
  .home-inner {
-    background-image: url(./images/aurora.jpg);
+    background-image: url(../images/aurora.jpg);
     position: fixed;
     display: table;
     top: 0;
@@ -106,6 +109,7 @@ html {
 
 .tech-title {
     color: #E3005B;
+    font-size: 1.4rem;
 }
 
  .tech-icons {
@@ -113,7 +117,7 @@ html {
      width: 101%;
  }
 
- .svg-inline--fa {
+ .portfolio-item {
      color: #E3005B;
  }
  
