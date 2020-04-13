@@ -3,16 +3,15 @@ import utils from '../helpers/utils';
 const projects = [
   {
     title: 'Pet Adoption',
-    screenshot: '../../screenshots/main-view.png',
+    screenshot: 'https://i.imgur.com/ETMMnzN.png',
     // eslint-disable-next-line max-len
-    description: 'Project to gain familiarization with HTML5, CSS3, JavaScript dynamic page building, and Bootstrap gird cards.', // A good project description includes 'the what', 'the why', and 'the how'.
+    description: 'Project to gain familiarization with HTML5, CSS3, JavaScript dynamic page building, and Bootstrap grid cards.', // A good project description includes 'the what', 'the why', and 'the how'.
     technologiesUsed:
       'HTML5, CSS3, JavaScript, Bootstrap',
     available: true,
     // eslint-disable-next-line max-len
-    url: 'https://github.com/christopherjohnson1/personal-bio-site', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
+    url: 'https://github.com/christopherjohnson1/pet-adoption', // Towards the latter part of the class, you will learn how to host your projects and people will be able to view them live. Cool, right? Welp, until then, just use your GitHub link in this spot as well.
   },
-  {},
 ];
 
 
@@ -20,15 +19,17 @@ const createProjectCards = () => {
   let domString = '';
   for (let i = 0; i < projects.length; i++) {
     if (projects[i].available === true) {
-      domString += '<div class="col-11 col-sm-10">';
+      console.error(projects);
+      domString += '<div class="col-11 col-sm-10 py-5">';
       domString += '<div class="row pt-3">';
       domString += '<div class="col-md-6 pb-5">';
       domString += '<div class="card rounded-0 mx-sm-2 mx-lg-4 mx-xl-5">';
-      domString += `<img src='${projects[i].screenshot}' alt="" class="card-img-top rounded-0">`;
+      domString += `<img src=${projects[i].screenshot} alt="pet adoption" class="card-img-top rounded-0">`;
       domString += '<div class="card-body">';
       domString += `<h4>${projects[i].title}</h4>`;
       domString += `<h5 class="mt-2 mb-3 tech-used"><p class="not-red">Technologies used:</p> ${projects[i].technologiesUsed}</h5>`;
       domString += `<p class="lead border-top pt-3">${projects[i].description}</p>`;
+      domString += `<a href=${projects[i].url}>Project GitHub</a>`;
       domString += '</div>';
       domString += '</div>';
       domString += '</div>';
